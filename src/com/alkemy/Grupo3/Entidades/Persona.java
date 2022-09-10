@@ -25,7 +25,7 @@ public abstract class Persona {
     }
 
     public  void presentarse(){
-        System.out.println("Hola" + getNombre() + getApellido() );
+        System.out.println("Hola" + " " + getNombre() +" " + getApellido() );
 
     }
 
