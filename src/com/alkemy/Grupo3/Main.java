@@ -2,6 +2,7 @@ package com.alkemy.Grupo3;
 
 import com.alkemy.Grupo3.Entidades.Empleado;
 import com.alkemy.Grupo3.Entidades.Persona;
+import com.alkemy.Grupo3.Entidades.SubEntidades.EmpleadoAsalariado;
 import com.alkemy.Grupo3.Entidades.SubEntidades.EmpleadoBaseMasComision;
 import com.alkemy.Grupo3.Entidades.SubEntidades.EmpleadoPorComision;
 
@@ -21,7 +22,7 @@ public class Main {
 
         Empleado empleado = new EmpleadoPorComision("Pepito", "De Los Palotes", 30, 2000.0, "jhg124");
         Empleado empleado1 = new EmpleadoBaseMasComision("Harry", "Potter", 18, 3000.0, "jhg124", 500);
-
+        Empleado empleado2 = new EmpleadoAsalariado("Homer", "Simpson", 39, 11000.0, "jhg124");
         System.out.println("***********************************************");
         empleado.presentarse();
         empleadoMayorDeEdad(empleado);
@@ -30,6 +31,10 @@ public class Main {
         empleado1.presentarse();
         empleadoMayorDeEdad(empleado1);
         System.out.println(empleado1);
+        System.out.println("************************************************");
+        empleado2.presentarse();
+        empleadoMayorDeEdad(empleado2);
+        System.out.println(empleado2);
         System.out.println("************************************************");
 
 

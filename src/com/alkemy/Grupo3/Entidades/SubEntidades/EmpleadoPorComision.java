@@ -23,6 +23,7 @@ public class EmpleadoPorComision extends Empleado {
     @Override
     public double ingresos(){
         System.out.println("Salario para el empleado: ");
+        System.out.println("Ventas: " + getVentasBrutas());
         tarifaComision = getVentasBrutas() * 0.1;
         System.out.println("Tarifa de Comision: " + getTarifaComision());
         double comisionVentas = getVentasBrutas() * 0.2;
@@ -33,7 +34,7 @@ public class EmpleadoPorComision extends Empleado {
 
     @Override
     public String toString() {
-        return "EmpleadoPorComision = " +
+        return "Empleado Por Comision = " +
                 "nombre: '" + getNombre() + '\'' +
                 ", apellido: '" + getApellido() + '\'' +
                 ", edad: " + getEdad() +", " +
