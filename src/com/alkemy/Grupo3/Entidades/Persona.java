@@ -24,12 +24,12 @@ public abstract class Persona {
         return edad;
     }
 
-    void presentarse(){
+    public  void presentarse(){
         System.out.println("Hola" + getNombre() + getApellido() );
 
     }
 
-    boolean esMayorDeEdad(){
+    public boolean esMayorDeEdad(){
   	    return edad > 18;
     }
 }
