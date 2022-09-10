@@ -2,6 +2,7 @@ package com.alkemy.Grupo3;
 
 import com.alkemy.Grupo3.Entidades.Empleado;
 import com.alkemy.Grupo3.Entidades.Persona;
+import com.alkemy.Grupo3.Entidades.SubEntidades.EmpleadoBaseMasComision;
 import com.alkemy.Grupo3.Entidades.SubEntidades.EmpleadoPorComision;
 
 import java.sql.SQLOutput;
@@ -18,11 +19,18 @@ public class Main {
         List<Empleado> empleados =  new ArrayList<>();
         empleados.add(new EmpleadoPorComision("Pepito", "Los Paloptes", 30, 2000.0, "jhg124"));
 
-        Empleado empleado = new EmpleadoPorComision("Pepito", "Los Paloptes", 30, 2000.0, "jhg124");
+        Empleado empleado = new EmpleadoPorComision("Pepito", "De Los Palotes", 30, 2000.0, "jhg124");
+        Empleado empleado1 = new EmpleadoBaseMasComision("Harry", "Potter", 18, 3000.0, "jhg124", 500);
 
+        System.out.println("***********************************************");
         empleado.presentarse();
         empleadoMayorDeEdad(empleado);
         System.out.println(empleado);
+        System.out.println("************************************************");
+        empleado1.presentarse();
+        empleadoMayorDeEdad(empleado1);
+        System.out.println(empleado1);
+        System.out.println("************************************************");
 
 
 

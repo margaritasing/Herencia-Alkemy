@@ -36,7 +36,7 @@ public class EmpleadoPorComision extends Empleado {
         return "EmpleadoPorComision = " +
                 "nombre: '" + getNombre() + '\'' +
                 ", apellido: '" + getApellido() + '\'' +
-                ", edad: " + edad +", " +
+                ", edad: " + getEdad() +", " +
                 ", Numero Social: '" + getNumeroSeguroSocial() + '\'' + " "+
                 "Salario a devengar: $"  +ingresos() +
                 '.';

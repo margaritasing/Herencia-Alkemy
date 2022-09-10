@@ -30,6 +30,6 @@ public abstract class Persona {
     }
 
     public boolean esMayorDeEdad(){
-  	    return edad > 18;
+  	    return edad >= 18;
     }
 }
