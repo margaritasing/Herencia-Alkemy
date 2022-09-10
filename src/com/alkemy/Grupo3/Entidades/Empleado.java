@@ -5,6 +5,7 @@ public class Empleado  extends Persona{
     protected  double ventasBrutas;
     protected  double tarifaComision;
     protected  String numeroSeguroSocial;
+    protected double salario;
 
     public Empleado(String nombre, String apellido, int edad, double ventasBrutas, double tarifaComision, String numeroSeguroSocial) {
         super(nombre, apellido, edad);
@@ -20,6 +21,13 @@ public class Empleado  extends Persona{
     }
 
 
+    public double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
 
     public double getVentasBrutas() {
         return ventasBrutas;

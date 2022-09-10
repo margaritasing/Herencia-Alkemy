@@ -8,7 +8,7 @@ EmpleadoPorComision: cobra un salario en funcion la tarifaComision y sus ventas 
 
 public class EmpleadoPorComision extends Empleado {
 
-    private double salario;
+
 
 
     public EmpleadoPorComision(String nombre, String apellido, int edad, double ventasBrutas, String numeroSeguroSocial) {

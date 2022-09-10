@@ -10,7 +10,6 @@ a no ser que sus ventas superen los $10.000, en tal caso, su salario aumenta un 
 public class EmpleadoAsalariado extends Empleado {
 
     private double salarioFijo = 1000.0;
-    private double sueldo;
 
 
     public EmpleadoAsalariado(String nombre, String apellido, int edad, double ventasBrutas, String numeroSeguroSocial) {
@@ -21,9 +20,6 @@ public class EmpleadoAsalariado extends Empleado {
         return salarioFijo;
     }
 
-    public double getSueldo() {
-        return sueldo;
-    }
 
     @Override
     public double ingresos(){
@@ -34,8 +30,8 @@ public class EmpleadoAsalariado extends Empleado {
             tarifaComision = getSalarioFijo() * 0.2;
         }
         System.out.println("Tarifa de comisión: " + getTarifaComision());
-        sueldo = getSalarioFijo() + getTarifaComision();
-        return getSueldo();
+        salario = getSalarioFijo() + getTarifaComision();
+        return getSalario();
     }
 
     @Override

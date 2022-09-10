@@ -11,7 +11,7 @@ empleadoPorComision pero este, ademas, cobra una base que
 public class EmpleadoBaseMasComision  extends Empleado {
 
     private double sueldoBase;
-    private double salario;
+
 
 
     public EmpleadoBaseMasComision(String nombre, String apellido, int edad, double ventasBrutas, String numeroSeguroSocial, double sueldoBase) {
