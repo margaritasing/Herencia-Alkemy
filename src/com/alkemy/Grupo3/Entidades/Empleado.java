@@ -1,5 +1,13 @@
 package com.alkemy.Grupo3.Entidades;
 
+import com.alkemy.Grupo3.Entidades.SubEntidades.EmpleadoAsalariado;
+import com.alkemy.Grupo3.Entidades.SubEntidades.EmpleadoBaseMasComision;
+import com.alkemy.Grupo3.Entidades.SubEntidades.EmpleadoPorComision;
+import com.alkemy.Grupo3.Entidades.SubEntidades.EmpleadoPorHoras;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Empleado  extends Persona{
 
     protected  double ventasBrutas;
@@ -7,18 +15,13 @@ public class Empleado  extends Persona{
     protected  String numeroSeguroSocial;
     protected double salario;
 
-    public Empleado(String nombre, String apellido, int edad, double ventasBrutas, double tarifaComision, String numeroSeguroSocial) {
-        super(nombre, apellido, edad);
-        this.ventasBrutas = ventasBrutas;
-        this.tarifaComision = tarifaComision;
-        this.numeroSeguroSocial = numeroSeguroSocial;
-    }
 
     public Empleado(String nombre, String apellido, int edad, double ventasBrutas, String numeroSeguroSocial) {
         super(nombre, apellido, edad);
         this.ventasBrutas = ventasBrutas;
         this.numeroSeguroSocial = numeroSeguroSocial;
     }
+
 
 
     public double getSalario() {
@@ -37,9 +40,6 @@ public class Empleado  extends Persona{
         return tarifaComision;
     }
 
-    public void setVentasBrutas(double ventasBrutas) {
-        this.ventasBrutas = ventasBrutas;
-    }
 
     public void setTarifaComision(double tarifaComision) {
         this.tarifaComision = tarifaComision;
@@ -58,4 +58,10 @@ public class Empleado  extends Persona{
     public String toString() {
         return "Empleado";
     }
+
+
+
+
+
+
 }
