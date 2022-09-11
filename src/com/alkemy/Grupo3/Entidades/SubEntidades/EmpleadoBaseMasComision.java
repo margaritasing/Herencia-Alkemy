@@ -31,12 +31,12 @@ public class EmpleadoBaseMasComision  extends Empleado {
     public double ingresos(){
         System.out.println("Salario para el empleado: ");
         System.out.println("Ventas: " + getVentasBrutas());
-        tarifaComision = getVentasBrutas() * 0.1;
+        setTarifaComision(getVentasBrutas() * 0.1);
         System.out.println("Tarifa de Comision: " + getTarifaComision());
         double comisionVentas = getVentasBrutas() * 0.2;
         System.out.println("Comisión de ventas: " + comisionVentas);
         System.out.println("Sueldo base: " + getSueldoBase());
-        salario =  getTarifaComision() + getSueldoBase() + comisionVentas;
+       setSalario(getTarifaComision() + getSueldoBase() + comisionVentas);
         return getSalario();
     }
 

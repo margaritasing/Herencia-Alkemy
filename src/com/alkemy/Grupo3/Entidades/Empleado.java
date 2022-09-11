@@ -37,6 +37,14 @@ public class Empleado  extends Persona{
         return tarifaComision;
     }
 
+    public void setVentasBrutas(double ventasBrutas) {
+        this.ventasBrutas = ventasBrutas;
+    }
+
+    public void setTarifaComision(double tarifaComision) {
+        this.tarifaComision = tarifaComision;
+    }
+
     public String getNumeroSeguroSocial() {
         return numeroSeguroSocial;
     }
@@ -47,13 +55,7 @@ public class Empleado  extends Persona{
 
 
 
-
-    @Override
     public String toString() {
-        return "Empleado{" +
-                "ventasBrutas=" + ventasBrutas +
-                ", tarifaComision=" + tarifaComision +
-                ", numeroSeguroSocial='" + numeroSeguroSocial + '\'' +
-                '}';
+        return "Empleado";
     }
 }

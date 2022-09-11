@@ -33,34 +33,6 @@ public class Main {
             System.out.println(empleado);
 
         }
-      /*  Empleado empleado = new EmpleadoPorComision("Pepito", "De Los Palotes", 30, 2000.0, "jhg124");
-        Empleado empleado1 = new EmpleadoBaseMasComision("Harry", "Potter", 18, 3000.0, "jhg124", 500);
-        Empleado empleado2 = new EmpleadoAsalariado("Homer", "Simpson", 39, 11000.0, "jhg124");
-        Empleado empleado3 = new EmpleadoPorHoras("Jack", "Parrow", 49, 11000.0, "jhg124", 40,180.0);
-        System.out.println("***********************************************");
-        empleado.presentarse();
-        empleadoMayorDeEdad(empleado);
-        System.out.println(empleado);
-        System.out.println("************************************************");
-        empleado1.presentarse();
-        empleadoMayorDeEdad(empleado1);
-        System.out.println(empleado1);
-        System.out.println("************************************************");
-        empleado2.presentarse();
-        empleadoMayorDeEdad(empleado2);
-        System.out.println(empleado2);
-        System.out.println("************************************************");
-        empleado3.presentarse();
-        empleadoMayorDeEdad(empleado3);
-        System.out.println(empleado3);
-        System.out.println("************************************************");*/
-
-
-
-
-
-
-
 
     }
 

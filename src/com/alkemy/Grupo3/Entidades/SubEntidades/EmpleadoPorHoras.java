@@ -35,10 +35,10 @@ public class EmpleadoPorHoras extends Empleado {
     public double ingresos(){
         System.out.println("Salario para el empleado: ");
         System.out.println("Ventas: " + getVentasBrutas());
-        salario = getCantidadHoras() * getPrecioHora();
+        setSalario(getCantidadHoras() * getPrecioHora());
         System.out.println("Salario: " + getSalario());
         if (getVentasBrutas() > 10000){
-            tarifaComision = getSalario() * 0.2;
+           setTarifaComision(getSalario() * 0.2);
         }
         System.out.println("Tarifa de comision: " + getTarifaComision());
         setSalario(getTarifaComision() + getSalario());
@@ -47,7 +47,7 @@ public class EmpleadoPorHoras extends Empleado {
 
     @Override
     public String toString() {
-        return "Empleado Por Comision = " +
+        return "Empleado Por Hora = " +
                 "nombre: '" + getNombre() + '\'' +
                 ", apellido: '" + getApellido() + '\'' +
                 ", edad: " + getEdad() +", " +

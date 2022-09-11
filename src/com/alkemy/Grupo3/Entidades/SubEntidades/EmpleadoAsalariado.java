@@ -20,6 +20,9 @@ public class EmpleadoAsalariado extends Empleado {
         return salarioFijo;
     }
 
+    public void setSalarioFijo(double salarioFijo) {
+        this.salarioFijo = salarioFijo;
+    }
 
     @Override
     public double ingresos(){
@@ -27,11 +30,11 @@ public class EmpleadoAsalariado extends Empleado {
         System.out.println("Salario base: " + getSalarioFijo());
         System.out.println("Ventas: " + getVentasBrutas());
         if (getVentasBrutas() > 10000){
-            tarifaComision = getSalarioFijo() * 0.2;
+            setTarifaComision(getSalarioFijo() * 0.2);
         }
         System.out.println("Tarifa de comisión: " + getTarifaComision());
-        salario = getSalarioFijo() + getTarifaComision();
-        return getSalario();
+        setSalarioFijo(getSalarioFijo() + getTarifaComision());
+        return getSalarioFijo();
     }
 
     @Override
